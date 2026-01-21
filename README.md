@@ -1,8 +1,8 @@
-# 🏎️ F1 Qualifying Predictor 2025
+# F1 Qualifying Predictor 2025
 
 A machine learning project that predicts **Formula 1 qualifying positions** for the 2025 season using **Random Forest algorithms** and historical F1 data from the FastF1 API.
 
-## 🎯 Project Overview
+## Project Overview
 
 Unlike traditional race outcome predictions, this project focuses specifically on **qualifying session results** - often the most critical factor in determining race performance. The model uses Random Forest regression to predict grid positions based on:
 
@@ -12,11 +12,11 @@ Unlike traditional race outcome predictions, this project focuses specifically o
 - **Driver experience and consistency scores**
 - **Historical qualifying data from 2024**
 
-## 🔍 Why Qualifying Predictions?
+## Why Qualifying Predictions?
 
 Qualifying determines starting grid positions, which are crucial for race outcomes - especially on circuits where overtaking is difficult. By focusing on qualifying rather than race results, this model targets the most predictable and data-rich session in F1.
 
-## 🚀 Features
+## Features
 
 - **Random Forest Regressor**: More robust to overfitting than gradient boosting for smaller datasets
 - **Multi-factor analysis**: Combines practice times, team strength, and circuit characteristics
@@ -24,21 +24,21 @@ Qualifying determines starting grid positions, which are crucial for race outcom
 - **Cross-validation**: Ensures model reliability across different data splits
 - **Feature importance visualization**: Understand which factors matter most for qualifying performance
 
-## 📊 Data Sources
+## Data Sources
 
 - **FastF1 API**: Official F1 timing data including practice, qualifying, and race sessions
 - **2024 Historical Data**: Training baseline from previous season
 - **2025 Practice Sessions**: Live FP3 data for predictions
 - **Team Performance Metrics**: Constructor standings and recent form
 
-## 📁 File Structure
+##  File Structure
 
 - `quali_pred_australia.py` - Australian GP qualifying predictions
 - `quali_pred_bahrain.py` - Bahrain GP with advanced sector analysis
 - `quali_pred_monaco.py` - Monaco GP with street circuit specialization
 - Additional race predictions will be added throughout the 2025 season
 
-## 🛠️ Installation & Dependencies
+##  Installation & Dependencies
 
 ```bash
 pip install fastf1 pandas numpy scikit-learn matplotlib
@@ -51,7 +51,7 @@ pip install fastf1 pandas numpy scikit-learn matplotlib
 - `scikit-learn` - Machine learning (Random Forest)
 - `matplotlib` - Visualization
 
-## 🏁 Usage
+## Usage
 
 Run any qualifying prediction script:
 
@@ -61,17 +61,17 @@ python3 quali_pred_australia.py
 
 **Example Output:**
 ```
-🏁 Predicted 2025 Australian GP Qualifying Results 🏁
+ Predicted 2025 Australian GP Qualifying Results 🏁
 
 P1: NOR (McLaren)
 P2: PIA (McLaren)
 P3: LEC (Ferrari)
 ...
 
-📊 Model MAE: 1.85 positions
+ Model MAE: 1.85 positions
 ```
 
-## 📈 Model Performance
+##  Model Performance
 
 The model is evaluated using **Mean Absolute Error (MAE)** measured in grid positions. An MAE of ~2 positions means the model typically predicts within 2 grid spots of actual qualifying results.
 
@@ -80,7 +80,7 @@ The model is evaluated using **Mean Absolute Error (MAE)** measured in grid posi
 - Feature importance analysis included in Bahrain script
 - Model improves as more 2025 data becomes available
 
-## 🔧 Methodology
+## Methodology
 
 1. **Data Collection**: Extract FP3 and historical qualifying data via FastF1
 2. **Feature Engineering**:
@@ -92,7 +92,7 @@ The model is evaluated using **Mean Absolute Error (MAE)** measured in grid posi
 4. **Prediction**: Project qualifying positions for upcoming race
 5. **Validation**: Cross-validation and MAE evaluation
 
-## 🎛️ Key Differences from Race Predictions
+##  Key Differences from Race Predictions
 
 | Aspect | This Project (Qualifying) | Race Predictions |
 |--------|---------------------------|------------------|
@@ -102,7 +102,7 @@ The model is evaluated using **Mean Absolute Error (MAE)** measured in grid posi
 | **Predictability** | Higher (fewer variables) | Lower (more chaos factors) |
 | **Data Source** | Practice sessions | Historical race results |
 
-## 🌟 Circuit Specialization
+##  Circuit Specialization
 
 The model includes specific factors for different circuit types:
 
@@ -110,7 +110,7 @@ The model includes specific factors for different circuit types:
 - **High-Speed Circuits** (Monza, Spa): Team aerodynamic efficiency emphasized
 - **Technical Circuits** (Suzuka, Barcelona): All-around driver skill valued
 
-## 📌 Future Enhancements
+## Future Enhancements
 
 - [ ] Weather integration for wet qualifying sessions
 - [ ] Tire compound strategy analysis
@@ -119,17 +119,13 @@ The model includes specific factors for different circuit types:
 - [ ] Historical accuracy tracking throughout 2025 season
 - [ ] Ensemble methods combining multiple models
 
-## 📜 License
+##  License
 
 MIT License - Free to use and modify
 
-## 🙏 Credits
+##  Credits
 
-- **FastF1**: Amazing open-source F1 data API
-- **F1 Community**: For continuous feedback and improvements
-
+- **FastF1**:  open-source F1 data API
 ---
 
-**Made for F1 fans and data enthusiasts!** 🏎️💨
-
-*Follow along as we predict every qualifying session of the 2025 F1 season!*
+*Follow along as I try to predict every qualifying session of the 2025 F1 season!*
